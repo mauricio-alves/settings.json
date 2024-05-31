@@ -5,7 +5,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": false,
   "workbench.list.smoothScrolling": true,
-  "workbench.colorTheme": "Ballerini Theme",
 
   // Explorer
   "explorer.compactFolders": false,
@@ -25,11 +24,11 @@
   "editor.lineHeight": 24,
   "editor.detectIndentation": true,
   "editor.snippetSuggestions": "top",
-  "editor.wordBasedSuggestions": false,
+  "editor.wordBasedSuggestions": "off",
   "editor.suggest.localityBonus": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.formatOnPaste": false,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.mouseWheelScrollSensitivity": 2,
   "editor.smoothScrolling": true,
   "editor.mouseWheelZoom": true,
@@ -55,8 +54,8 @@
 
   // Auto fix on save
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll": true
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll": "explicit"
   },
 
   // Files and search
@@ -132,24 +131,24 @@
   "typescript.suggest.autoImports": true,
   "[javascript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "editor.suggestSelection": true,
-      "editor.suggest.showKeywords": false
+      "source.fixAll.eslint": "explicit",
+      "editor.suggestSelection": "explicit",
+      "editor.suggest.showKeywords": "never"
     }
   },
   "[javascriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     }
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     }
   },
   "[typescriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     }
   },
 
@@ -304,5 +303,13 @@
   "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
   "liveServer.settings.root": "",
   "tabnine.experimentalAutoImports": true,
-  "bracket-pair-colorizer-2.depreciation-notice": false
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "[javascriptreact][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "workbench.colorTheme": "Dracula",
+  "importCost.timeout": 50000,
+  "github.copilot.editor.enableAutoCompletions": true
 }
